@@ -1,12 +1,81 @@
-/*body {
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
   background-color: #eee;
   color: grey;
+  box-sizing: border-box;
+  font-size: 14pt;
 }
 header {
-		margin: 32px 0;
-		margin-top: 0;
-		background: red;
+    padding: 0;
+    margin: 0;
+		background: black;
+}
 
+h1 {
+  color: white;
+  font-size: 4em;
+  text-align: center;
+  display: block;
+  font-weight: light;
+  padding: 2%;
+}
+main {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 80%;
+  margin: 0 auto;
+}
+
+main > div {
+  margin: 50px 10px;
+}
+
+#basics {
+  width: 15%;
+  flex-grow: 1;
+  margin: 10px;
+  color: green;
+}
+
+#story p {
+  border-left: 1px dotted grey;
+  padding-left: 20px;
+}
+
+#story h2 {
+  padding-left: 20px;
+}
+
+#story {
+  width: 25%;
+  flex-grow: 2;
+  margin: 10px;
+}
+
+#picture {
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  flex-grow: 0;
+  margin: auto 10px;
+  background-color: green;
+}
+
+
+h2 {
+  font-size: 2em;
+  color: black;
+}
+
+/*
 header:after{
 		background:
 					linear-gradient(-45deg, transparent 16px, red, 0),

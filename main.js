@@ -16,6 +16,7 @@ fetch(url).then(function (data) {
   let email = data.email;
   let company = data.company;
   let website = data.blog;
+  let image = data.avatar_url;
 
   //adding name to header h1
   title.textContent = `${name}`;
@@ -28,8 +29,12 @@ fetch(url).then(function (data) {
   <p>Company: ${company}</p>
   <p>Website: ${website}</p>
   `
-  console.log(basicsHTML);
-  basics.innerHTML += basicsHTML;
-  console.log(basics);
 
+  //adding template literal with data to HTML body
+  basics.innerHTML += basicsHTML;
+
+  //creating and adding image template literal to picture div
+  let pictureHTML = `
+  <img src=${image} />`
+  picture.innerHTML += pictureHTML;
 })
