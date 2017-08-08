@@ -20,6 +20,7 @@ header {
 		background: black;
 }
 
+/*zigzag border code from: https://launchforth.io/blog/post/zig-zag-borders-in-css/1205/*/
 .container {
 position: relative;
 padding: 1px 0px 4px 0px;
@@ -104,22 +105,3 @@ h2 {
   font-size: 2em;
   color: black;
 }
-
-/*
-header:after{
-		background:
-					linear-gradient(-45deg, transparent 16px, red, 0),
-					linear-gradient(45deg, transparent 16px, red,  0);
-        background-repeat: repeat-x;
-		background-position: left bottom;
-        background-size: 22px 32px;
-        content: "";
-        display: block;
-
-		width: 100%;
-		height: 32px;
-
- 	    position: relative;
-		top:64px;
-		left:0px;
-	}*/
